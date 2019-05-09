@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# ~/.macos — Copied from https://mths.be/macos
+# ~/.macos — Based on https://mths.be/macos
 
 function is_set() {
     [ ! -z $1 ]
@@ -92,7 +92,3 @@ then
     is_true $DARK_INTERFACE && APPLE_INTERFACE_STYLE="Dark" || APPLE_INTERFACE_STYLE="Light"
     defaults write -g AppleInterfaceStyle -string "$APPLE_INTERFACE_STYLE"
 fi
-
-
-
-
